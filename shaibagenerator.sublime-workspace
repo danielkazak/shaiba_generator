@@ -1,0 +1,375 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"getFROMParse"
+			],
+			[
+				"JSON",
+				"getJSON"
+			],
+			[
+				"push",
+				"pushObject"
+			],
+			[
+				"read",
+				"readJSONFile"
+			],
+			[
+				"bower",
+				"bower_components"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2996,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<!--[if lt IE 7]>      <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\"> <![endif]-->\n<!--[if IE 7]>         <html class=\"no-js lt-ie9 lt-ie8\"> <![endif]-->\n<!--[if IE 8]>         <html class=\"no-js lt-ie9\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\"> <!--<![endif]-->\n    <head>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n        <title>Shaiba Generator</title>\n        <meta name=\"description\" content=\"\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->\n\n        <link rel=\"stylesheet\" href=\"css/normalize.css\">\n        <link rel=\"stylesheet\" href=\"css/main.css\">\n        <script src=\"js/vendor/modernizr-2.6.2.min.js\"></script>\n    </head>\n    <body>\n        <!--[if lt IE 7]>\n            <p class=\"browsehappy\">You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve your experience.</p>\n        <![endif]-->\n\n        <!-- Add your site or application content here -->\n        <!-- Top bar -->\n        <div class=\"cog\">\n            <div class=\"inner-cog\">\n                <a href=\"settings.html\"><img class=\"cog\" src=\"img/settings.png\"/></a>\n            </div>\n            <div class=\"generatewrap\">\n            <div class=\"generate\">\n                <a href=\"#\" onclick=\"getFROMParse(tracks)\">\n                    <img src=\"img/generate.png\" style=\"height: 60px; width: 60px;\"/>\n                </a>\n            </div>\n        </div>\n        </div>\n        \n\n        <!-- Center -->\n        <div class=\"picdiv\" id=\"#list\"></div>  \n\n        <!-- Generated sentence -->\n      \n\n        <!-- Share Options -->\n        \n        \n        \n        <p style=\"text-align: right;\"><div style=\"color: red;\" id=\"#sentence\"></p>\n        \n\n        <!--<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\"></script>-->\n        <script type=\"text/javascript\" src=\"http://www.parsecdn.com/js/parse-1.3.0.min.js\"></script>\n        <script>window.jQuery || document.write('<script src=\"js/vendor/jquery-1.10.2.min.js\"><\\/script>')</script>\n        <script src=\"js/plugins.js\"></script>\n        <script src=\"js/playlist.js\"></script>\n\n\n        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->\n        <!--<script>\n            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=\n            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;\n            e=o.createElement(i);r=o.getElementsByTagName(i)[0];\n            e.src='//www.google-analytics.com/analytics.js';\n            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));\n            ga('create','UA-XXXXX-X');ga('send','pageview');\n        </script>-->\n    </body>\n</html>\n",
+			"file": "playlist.html",
+			"file_size": 2886,
+			"file_write_time": 130585310812545905,
+			"settings":
+			{
+				"buffer_size": 2853,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/playlist.js",
+			"settings":
+			{
+				"buffer_size": 1825,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/main.css",
+			"settings":
+			{
+				"buffer_size": 6490,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/browser.sublime-build",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Content/wamp/www/playlist.html",
+		"/C/Content/wamp/www/js/playlist.js",
+		"/C/Content/wamp/www/js/playlist.html",
+		"/C/Content/wamp/www/settings.html",
+		"/C/Content/wamp/www/css/main.css",
+		"/C/Content/wamp/www/shaiba.json",
+		"/C/Content/wamp/www/j.json",
+		"/C/Content/wamp/www/index.html",
+		"/C/Content/wamp/www/js/main.js",
+		"/C/Content/wamp/www/js/jsonget.js",
+		"/C/Content/Projects/html_js/html5-boilerplate-4.3.0/j.json",
+		"/C/Content/Projects/html_js/html5-boilerplate-4.3.0/css/main.css",
+		"/C/Content/Projects/html_js/html5-boilerplate-4.3.0/js/main.js",
+		"/C/Content/Projects/html_js/html5-boilerplate-4.3.0/----TODO----",
+		"/C/Content/Projects/html_js/html5-boilerplate-4.3.0/settings.html",
+		"/C/Content/Projects/html_js/html5-boilerplate-4.3.0/index.html",
+		"/C/Content/Projects/html_js/html5-boilerplate-4.3.0/data/shaiba.json",
+		"/C/Content/Projects/html_js/html5-boilerplate-4.3.0/js/plugins.js",
+		"/C/Content/Projects/html_js/html5-boilerplate-4.3.0/js/generator.js",
+		"/C/Users/DELL/AppData/Roaming/Sublime Text 2/Packages/User/browser.sublime-build",
+		"/C/Content/Projects/meteor/todos/server/publish.js",
+		"/C/Content/Projects/meteor/todos/client/todos.css",
+		"/C/Content/Projects/meteor/todos/client/todos.html",
+		"/C/Content/Projects/meteor/todos/client/todos.js",
+		"/C/Content/Projects/meteor/newapp/newapp.js",
+		"/C/Users/DELL/AppData/Roaming/Sublime Text 2/Packages/User/AngularJS-js-completions.sublime-settings",
+		"/C/Users/DELL/AppData/Roaming/Sublime Text 2/Packages/AngularJS/AngularJS-sublime-package.sublime-settings",
+		"/C/Content/Projects/node/nodetest1/views/userlist.jade",
+		"/C/Content/Projects/node/nodetest1/routes/index.js",
+		"/C/Content/Projects/node/nodetest1/app.js",
+		"/C/Content/Projects/node/nodetest1/package.json",
+		"/C/Content/Projects/Diary/app/scripts/controllers/main.js",
+		"/C/Content/Projects/Diary/app/index.html",
+		"/C/Content/Projects/Diary/app/views/about.html",
+		"/C/Content/Projects/Diary/app/views/contact.html",
+		"/C/Content/Projects/Diary/app/scripts/controllers/contact.js",
+		"/C/Content/Projects/Diary/app/scripts/controllers/about.js",
+		"/C/Content/Projects/Diary/app/scripts/controllers/datePicker.js",
+		"/C/Content/Projects/Diary/app/views/main.html",
+		"/C/Content/Projects/Diary/app/scripts/app.js",
+		"/C/Content/Projects/Diary/app/views/feed.html",
+		"/C/Content/Projects/Diary/app/scripts/controllers/feed.js",
+		"/E/CONTENT/doriso/doriso sms/IfyouRecievethis20080129185300.vmg",
+		"/E/CONTENT/doriso/doriso sms/(Doriso&Marcos,ICQ)20080130161012.vmg",
+		"/E/CONTENT/doriso/doriso sms/(Doriso&Marcos,ICQ)20080130153526.vmg",
+		"/E/CONTENT/doriso/doriso sms/(Doriso&Marcos,ICQ)20080130153752.vmg",
+		"/E/CONTENT/doriso/doriso sms/(Doriso&Marcos,ICQ)20080130154037.vmg",
+		"/E/CONTENT/doriso/doriso sms/(Doriso&Marcos,ICQ)20080130154236.vmg",
+		"/E/CONTENT/doriso/doriso sms/(Doriso&Marcos,ICQ)20080130154403.vmg",
+		"/E/CONTENT/doriso/doriso sms/(Doriso&Marcos,ICQ)20080130154443.vmg",
+		"/E/CONTENT/doriso/doriso sms/(Doriso&Marcos,ICQ)20080130154549.vmg",
+		"/E/CONTENT/doriso/doriso sms/(Doriso&Marcos,ICQ)20080130154620.vmg",
+		"/E/CONTENT/doriso/doriso sms/(Doriso&Marcos,ICQ)20080130154734.vmg",
+		"/E/CONTENT/doriso/doriso sms/(Doriso&Marcos,ICQ)20080130154913.vmg",
+		"/E/CONTENT/doriso/doriso sms/(Doriso&Marcos,ICQ)20080130155108.vmg",
+		"/C/Users/DELL/Desktop/index.html",
+		"/C/Users/DELL/Documents/Sylenth1/License.dat",
+		"/C/Content/Projects/Diary/app/views/feed.js",
+		"/C/Content/Projects/Diary/bower_components/highcharts-ng/example/example.html",
+		"/C/Content/Projects/Diary/bower_components/highcharts-ng/example/app.js",
+		"/C/Content/Projects/Diary/app/scripts/topic-timeline.js",
+		"/C/Content/Projects/Diary/app/scripts/controllers/timeline.js",
+		"/C/Content/Projects/Diary/app/scripts/controllers/DatepickerDemoCtrl.js",
+		"/C/Content/Projects/Diary/package.json",
+		"/C/Content/Projects/Diary/test/spec/controllers/main.js",
+		"/C/Content/Projects/Diary/.bowerrc",
+		"/C/Users/DELL/WebstormProjects/SurfBoard/surf-board/client/app/feed/feed.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"relative",
+			"colorName",
+			">\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"dishName"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 2996,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								2996
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS-sublime-package-1.2.1/AngularJS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "playlist.html",
+					"settings":
+					{
+						"buffer_size": 2853,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1618,
+								1618
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS-sublime-package-1.2.1/AngularJS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/playlist.js",
+					"settings":
+					{
+						"buffer_size": 1825,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 585.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/main.css",
+					"settings":
+					{
+						"buffer_size": 6490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1305.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 214.0,
+	"status_bar_visible": true
+}
