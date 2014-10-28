@@ -1,3 +1,30 @@
+
+
+
+// Functions
+function push(table){
+	if (table === "nations"){var val = document.getElementById("#nationTxt").value;}
+	else if (table === "dishes"){var val = document.getElementById("#dishTxt").value;}
+	else if (table === "adj"){var val = document.getElementById("#adjTxt").value;}
+	else {alert("Unknown table!");}
+	
+	var query = APP_DB.connector.postData(table, val);
+	console.log(query);
+}
+
+function get(table){
+	var query = APP_DB.connector.getData(table);
+	console.log(query);
+}
+
+
+
+
+
+
+
+
+
 /*Parse.initialize("SyCWUj76oNwCrRpfvO2B5gdkm9uKvMkHNyEjZwCJ", "W4RDU3xDaHX9VgpOv2oJzFkCyItDzA5MMGk5v69l");*/
 
 
@@ -51,17 +78,3 @@ function successMessage(name, label) {
 	document.getElementById(label).value = "";
 }*/
 
-function push(table){
-	if (table === "nations"){var val = document.getElementById("#nationTxt").value;}
-	else if (table === "dishes"){var val = document.getElementById("#dishTxt").value;}
-	else if (table === "adj"){var val = document.getElementById("#adjTxt").value;}
-	else {alert("Unknown table!");}
-	
-	var query = APP_DB.connector.postData(table, val);
-	console.log(query);
-}
-
-function get(table){
-	var query = APP_DB.connector.getData(table);
-	console.log(query);
-}

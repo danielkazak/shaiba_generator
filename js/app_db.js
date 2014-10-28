@@ -67,8 +67,11 @@ APP_DB.connector = {
 		else if (table === "nations") {
 			post_value = '{"natName":"' + val + '"}';
 		}
-		else {
+		else if (table === "adj") {
 			post_value = '{"adjName":"' + val + '"}';
+		}
+		else {
+			alert("Unknown table!");
 		}
 
 
