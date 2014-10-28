@@ -1,8 +1,9 @@
 
-Parse.initialize("SyCWUj76oNwCrRpfvO2B5gdkm9uKvMkHNyEjZwCJ", "W4RDU3xDaHX9VgpOv2oJzFkCyItDzA5MMGk5v69l");
+/*Parse.initialize("SyCWUj76oNwCrRpfvO2B5gdkm9uKvMkHNyEjZwCJ", "W4RDU3xDaHX9VgpOv2oJzFkCyItDzA5MMGk5v69l");
 getFROMParse("dishes");
 getFROMParse("nations");
 getFROMParse("adj");
+*/
 
 
 
@@ -10,23 +11,28 @@ getFROMParse("adj");
  var dishes = [];
  var nations = [];
  var adjs = [];
-
-
-
-
-
-
-
-
-
-
-
-
-
+ var finalSentence;
 
 
 // Functions
+function Randomize(length){
+  return Math.floor(Math.random() * length);
+}
 
+
+function GenerateSentence(){
+  dishes = APP_DB.connector.getData('dishes');
+  nations = APP_DB.connector.getData('nations');
+  adjs = APP_DB.connector.getData('adj');
+  finSentence = dishes[Randomize(dishes.length)] + " " + nations[Randomize(nations.length)] + 
+  " " + adjs[Randomize(adjs.length)];
+  document.getElementById("#genText").innerHTML = finSentence;
+
+}
+
+
+// Functions
+/*
 function generateShaiba(){
   var r = Randomize(dishes.length);
   var finSentence = dishes[r] + " " + nations[Randomize(nations.length)] + 
@@ -64,12 +70,7 @@ $.ajax({
           adjs.push(obj.results[v].adjName);
        }
        console.log(adjs);
-      }
-     
-       
-
-       
-      
+      }    
     },
     error: function(xhr, textStatus, err) { //odstampaj textStatus, err jbt
         alert('ne radi');
@@ -84,11 +85,5 @@ if (coll === "dishes"){  return dishes; }
  else if (coll === "nations"){return nations;}
  else { return adjs; }
 }
-
-
-
-function Randomize(length){
-	return Math.floor(Math.random() * length);
-}
-
+*/
 

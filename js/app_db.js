@@ -7,7 +7,7 @@ var APP_DB = APP_DB || {};
 var POST_SUCCESS_STRING = "Successfully added: ";
 var DELETE_SUCCESS_STRING = "Successfully removed: ";
 var post_value = "";
-var return_value = "";
+var return_value = [];
 var dishes = [];
 var nations = [];
 var adjs = [];
@@ -23,6 +23,7 @@ APP_DB.connector = {
  			 'X-Parse-REST-API-Key':'ykKXzomRdgxjdWPjPnhqcLFD7OmxAZbavzYOpIwr'},
   			url: "https://api.parse.com/1/classes/" + table,
   			contentType: "application/json",
+  			async: false,
   			dataType: 'json',
  			 success: function( data, status ){
     			var obj = $.parseJSON(JSON.stringify(data));
@@ -80,9 +81,11 @@ APP_DB.connector = {
   			url: "https://api.parse.com/1/classes/" + table,
   			contentType: "application/json",
   			dataType: 'json',
+  			async: false,
   			data: post_value,
  			 success: function( data, status ){
     			    console.log("POST status: " + status + "\n" + "Posted: \n" + val + " to: " + table);
+    			    return_value[0] = POST_SUCCESS_STRING + val;
     			},
     			error: function(xhr, textStatus, err) { 
         			console.log("Error:")
@@ -93,7 +96,7 @@ APP_DB.connector = {
     			}
   
 			});
-		
+		return return_value[0];
 	},
 
 	remove: function(table, val){

@@ -60,3 +60,8 @@ function push(table){
 	var query = APP_DB.connector.postData(table, val);
 	console.log(query);
 }
+
+function get(table){
+	var query = APP_DB.connector.getData(table);
+	console.log(query);
+}
