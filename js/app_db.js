@@ -135,6 +135,5 @@ APP_DB.connector = {
 };
 
 
-//APP_DB.connector.createConnector("SyCWUj76oNwCrRpfvO2B5gdkm9uKvMkHNyEjZwCJ", "W4RDU3xDaHX9VgpOv2oJzFkCyItDzA5MMGk5v69l");
 
 

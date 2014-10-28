@@ -4,8 +4,32 @@
 		"selected_items":
 		[
 			[
+				"return",
+				"return_value"
+			],
+			[
 				"get",
-				"getFROMParse"
+				"getElementById"
+			],
+			[
+				"post",
+				"post_value"
+			],
+			[
+				"POST",
+				"POST_SUCCESS_STRING"
+			],
+			[
+				"data",
+				"data_object"
+			],
+			[
+				"P",
+				"Parse_Object"
+			],
+			[
+				"cre",
+				"createConnector"
 			],
 			[
 				"JSON",
@@ -28,38 +52,51 @@
 	"buffers":
 	[
 		{
+			"file": "----TODO----",
+			"settings":
+			{
+				"buffer_size": 381,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/settings.js",
+			"settings":
+			{
+				"buffer_size": 2091,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/app_db.js",
+			"settings":
+			{
+				"buffer_size": 4249,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/main.js",
+			"settings":
+			{
+				"buffer_size": 2256,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "settings.html",
+			"settings":
+			{
+				"buffer_size": 3082,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2996,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<!DOCTYPE html>\n<!--[if lt IE 7]>      <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\"> <![endif]-->\n<!--[if IE 7]>         <html class=\"no-js lt-ie9 lt-ie8\"> <![endif]-->\n<!--[if IE 8]>         <html class=\"no-js lt-ie9\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\"> <!--<![endif]-->\n    <head>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n        <title>Shaiba Generator</title>\n        <meta name=\"description\" content=\"\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->\n\n        <link rel=\"stylesheet\" href=\"css/normalize.css\">\n        <link rel=\"stylesheet\" href=\"css/main.css\">\n        <script src=\"js/vendor/modernizr-2.6.2.min.js\"></script>\n    </head>\n    <body>\n        <!--[if lt IE 7]>\n            <p class=\"browsehappy\">You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve your experience.</p>\n        <![endif]-->\n\n        <!-- Add your site or application content here -->\n        <!-- Top bar -->\n        <div class=\"cog\">\n            <div class=\"inner-cog\">\n                <a href=\"settings.html\"><img class=\"cog\" src=\"img/settings.png\"/></a>\n            </div>\n            <div class=\"generatewrap\">\n            <div class=\"generate\">\n                <a href=\"#\" onclick=\"getFROMParse(tracks)\">\n                    <img src=\"img/generate.png\" style=\"height: 60px; width: 60px;\"/>\n                </a>\n            </div>\n        </div>\n        </div>\n        \n\n        <!-- Center -->\n        <div class=\"picdiv\" id=\"#list\"></div>  \n\n        <!-- Generated sentence -->\n      \n\n        <!-- Share Options -->\n        \n        \n        \n        <p style=\"text-align: right;\"><div style=\"color: red;\" id=\"#sentence\"></p>\n        \n\n        <!--<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\"></script>-->\n        <script type=\"text/javascript\" src=\"http://www.parsecdn.com/js/parse-1.3.0.min.js\"></script>\n        <script>window.jQuery || document.write('<script src=\"js/vendor/jquery-1.10.2.min.js\"><\\/script>')</script>\n        <script src=\"js/plugins.js\"></script>\n        <script src=\"js/playlist.js\"></script>\n\n\n        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->\n        <!--<script>\n            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=\n            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;\n            e=o.createElement(i);r=o.getElementsByTagName(i)[0];\n            e.src='//www.google-analytics.com/analytics.js';\n            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));\n            ga('create','UA-XXXXX-X');ga('send','pageview');\n        </script>-->\n    </body>\n</html>\n",
-			"file": "playlist.html",
-			"file_size": 2886,
-			"file_write_time": 130585310812545905,
-			"settings":
-			{
-				"buffer_size": 2853,
+				"buffer_size": 3043,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/playlist.js",
-			"settings":
-			{
-				"buffer_size": 1825,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/main.css",
-			"settings":
-			{
-				"buffer_size": 6490,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -87,15 +124,17 @@
 	},
 	"file_history":
 	[
-		"/C/Content/wamp/www/playlist.html",
-		"/C/Content/wamp/www/js/playlist.js",
-		"/C/Content/wamp/www/js/playlist.html",
+		"/C/Content/wamp/www/shaiba.json",
+		"/C/Content/wamp/www/js/generator.js",
+		"/C/Content/wamp/www/LICENSE.md",
+		"/C/Content/wamp/www/js/main.js",
+		"/C/Content/wamp/www/index.html",
 		"/C/Content/wamp/www/settings.html",
 		"/C/Content/wamp/www/css/main.css",
-		"/C/Content/wamp/www/shaiba.json",
+		"/C/Content/wamp/www/js/playlist.js",
+		"/C/Content/wamp/www/playlist.html",
+		"/C/Content/wamp/www/js/playlist.html",
 		"/C/Content/wamp/www/j.json",
-		"/C/Content/wamp/www/index.html",
-		"/C/Content/wamp/www/js/main.js",
 		"/C/Content/wamp/www/js/jsonget.js",
 		"/C/Content/Projects/html_js/html5-boilerplate-4.3.0/j.json",
 		"/C/Content/Projects/html_js/html5-boilerplate-4.3.0/css/main.css",
@@ -171,6 +210,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"coll",
+			"Parse",
+			"SHAIBA_APP",
 			"relative",
 			"colorName",
 			">\n"
@@ -181,6 +223,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"table",
+			"APP_DB",
 			"dishName"
 		],
 		"reverse": false,
@@ -197,25 +241,23 @@
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "----TODO----",
 					"settings":
 					{
-						"buffer_size": 2996,
+						"buffer_size": 381,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								2996
+								171,
+								171
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/AngularJS-sublime-package-1.2.1/AngularJS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -225,18 +267,99 @@
 				},
 				{
 					"buffer": 1,
-					"file": "playlist.html",
+					"file": "js/settings.js",
 					"settings":
 					{
-						"buffer_size": 2853,
+						"buffer_size": 2091,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1618,
-								1618
+								15,
+								15
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/app_db.js",
+					"settings":
+					{
+						"buffer_size": 4249,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3203,
+								3203
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 216.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/main.js",
+					"settings":
+					{
+						"buffer_size": 2256,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								280,
+								280
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "settings.html",
+					"settings":
+					{
+						"buffer_size": 3082,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1995,
+								1995
 							]
 						],
 						"settings":
@@ -252,57 +375,29 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "js/playlist.js",
+					"buffer": 5,
+					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 1825,
+						"buffer_size": 3043,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2443,
+								2443
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 585.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "css/main.css",
-					"settings":
-					{
-						"buffer_size": 6490,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/AngularJS-sublime-package-1.2.1/AngularJS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1305.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
