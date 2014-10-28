@@ -137,10 +137,21 @@ APP.connector = {
 // APP.listener methods
 APP.listener = {
     createFocusListener: function(elementId) {
-        var a = document.getElementById(elementId);
+        a = document.getElementById(elementId);
         a.onfocus = function(){
             console.log(elementId + " focused");
+            document.getElementById(elementId).addEventListener("keydown", function(e) {
+                if (!e) { var e = window.event; }
+                e.preventDefault(); // sometimes useful
+                console.log("event listener created");
+                // Enter is pressed
+                if (e.keyCode == 13) {
+                    console.log("enter pressed");
+                    APP.connector.postData(elementId.slice(1,elementId.length), a.value);
+                }
+            }, false);
         }
+
     },
 
     dummy: function (){

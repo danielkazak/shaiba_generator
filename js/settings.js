@@ -1,8 +1,9 @@
 // Functions
 function push(table){
-	if (table === "nations"){var val = document.getElementById("#nationTxt");}
-	else if (table === "dishes"){var val = document.getElementById("#dishTxt");}
-	else if (table === "adj"){var val = document.getElementById("#adjTxt");}
+    val = "";
+	if (table === "nations"){val = document.getElementById("#nations");}
+	else if (table === "dishes"){val = document.getElementById("#dishes");}
+	else if (table === "adj"){val = document.getElementById("#adj");}
 	else {alert("Unknown table!");}
 
     if (val.value === ""){
@@ -10,7 +11,7 @@ function push(table){
 
     }
     else {
-        var query = APP.connector.postData(table, val.value);
+        query = APP.connector.postData(table, val.value);
         document.getElementById(val.id).value = "";
         console.log(query);
         console.log(val);
@@ -29,7 +30,9 @@ function get(table){
 
 // Docoment ready
 $( document ).ready(function() {
-    APP.listener.createFocusListener("#nationTxt");
-    APP.listener.createFocusListener("#dishTxt");
-    APP.listener.createFocusListener("#adjTxt");
+    APP.listener.createFocusListener("#nations");
+    APP.listener.createFocusListener("#dishes");
+    APP.listener.createFocusListener("#adj");
+
+
 });
