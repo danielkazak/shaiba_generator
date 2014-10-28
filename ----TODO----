@@ -6,3 +6,4 @@
 * Add options if the dishes are plural or single and if it's male or female (Doron)
 * According to the last option we should generate the nation (Doron)
 * When adding a new value, need to check if it already exists (Kazak)
+* Add event listener namespace

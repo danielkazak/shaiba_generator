@@ -55,7 +55,7 @@
 			"file": "----TODO----",
 			"settings":
 			{
-				"buffer_size": 381,
+				"buffer_size": 412,
 				"line_ending": "Windows"
 			}
 		},
@@ -63,15 +63,7 @@
 			"file": "js/settings.js",
 			"settings":
 			{
-				"buffer_size": 2091,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/app_db.js",
-			"settings":
-			{
-				"buffer_size": 4249,
+				"buffer_size": 985,
 				"line_ending": "Windows"
 			}
 		},
@@ -79,7 +71,7 @@
 			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 2256,
+				"buffer_size": 531,
 				"line_ending": "Windows"
 			}
 		},
@@ -87,7 +79,7 @@
 			"file": "settings.html",
 			"settings":
 			{
-				"buffer_size": 3082,
+				"buffer_size": 3093,
 				"line_ending": "Windows"
 			}
 		},
@@ -95,7 +87,23 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3043,
+				"buffer_size": 3040,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/main.css",
+			"settings":
+			{
+				"buffer_size": 7779,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/app.js",
+			"settings":
+			{
+				"buffer_size": 4351,
 				"line_ending": "Windows"
 			}
 		}
@@ -124,6 +132,8 @@
 	},
 	"file_history":
 	[
+		"/C/Content/wamp/www/js/app_db.js",
+		"/C/Content/wamp/www/js/jsonget.js",
 		"/C/Content/wamp/www/shaiba.json",
 		"/C/Content/wamp/www/js/generator.js",
 		"/C/Content/wamp/www/LICENSE.md",
@@ -135,7 +145,6 @@
 		"/C/Content/wamp/www/playlist.html",
 		"/C/Content/wamp/www/js/playlist.html",
 		"/C/Content/wamp/www/j.json",
-		"/C/Content/wamp/www/js/jsonget.js",
 		"/C/Content/Projects/html_js/html5-boilerplate-4.3.0/j.json",
 		"/C/Content/Projects/html_js/html5-boilerplate-4.3.0/css/main.css",
 		"/C/Content/Projects/html_js/html5-boilerplate-4.3.0/js/main.js",
@@ -210,6 +219,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"input",
 			"coll",
 			"Parse",
 			"SHAIBA_APP",
@@ -236,7 +246,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -244,15 +254,15 @@
 					"file": "----TODO----",
 					"settings":
 					{
-						"buffer_size": 381,
+						"buffer_size": 412,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								171,
-								171
+								0,
+								0
 							]
 						],
 						"settings":
@@ -270,15 +280,15 @@
 					"file": "js/settings.js",
 					"settings":
 					{
-						"buffer_size": 2091,
+						"buffer_size": 985,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15,
-								15
+								985,
+								985
 							]
 						],
 						"settings":
@@ -294,44 +304,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "js/app_db.js",
-					"settings":
-					{
-						"buffer_size": 4249,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3203,
-								3203
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 216.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "js/main.js",
 					"settings":
 					{
-						"buffer_size": 2256,
+						"buffer_size": 531,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								280,
-								280
+								0,
+								0
 							]
 						],
 						"settings":
@@ -347,19 +331,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "settings.html",
 					"settings":
 					{
-						"buffer_size": 3082,
+						"buffer_size": 3093,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1995,
-								1995
+								0,
+								0
 							]
 						],
 						"settings":
@@ -369,25 +353,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 324.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 3043,
+						"buffer_size": 3040,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2443,
-								2443
+								0,
+								0
 							]
 						],
 						"settings":
@@ -398,6 +382,62 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "css/main.css",
+					"settings":
+					{
+						"buffer_size": 7779,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2957,
+								2957
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2496.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "js/app.js",
+					"settings":
+					{
+						"buffer_size": 4351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4336,
+								4336
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1944.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

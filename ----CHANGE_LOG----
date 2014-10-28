@@ -1,0 +1,2 @@
+Daniel: Re-designed the code, now you can address APP.connector for basic methods
+        such as getData, postData, etc.

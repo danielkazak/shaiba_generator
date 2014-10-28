@@ -1,7 +1,7 @@
 
 
-// check if global APP_DB namespace exists, if not - create it
-var APP_DB = APP_DB || {};
+// check if global APP namespace exists, if not - create it
+var APP = APP || {};
 
 // vars
 var POST_SUCCESS_STRING = "Successfully added: ";
@@ -12,8 +12,8 @@ var dishes = [];
 var nations = [];
 var adjs = [];
 
-// APP_DB.connector methods
-APP_DB.connector = {
+// APP.connector methods
+APP.connector = {
 
 	// Functions
 	getData: function(table){
@@ -132,6 +132,20 @@ APP_DB.connector = {
 			});
 	}
 
+};
+
+// APP.listener methods
+APP.listener = {
+    createFocusListener: function(elementId) {
+        var a = document.getElementById(elementId);
+        a.onfocus = function(){
+            console.log(elementId + " focused");
+        }
+    },
+
+    dummy: function (){
+        console.log("dummy");
+    }
 };
 
 
