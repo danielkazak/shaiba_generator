@@ -28,21 +28,26 @@ APP_DB.connector = {
  			 success: function( data, status ){
     			var obj = $.parseJSON(JSON.stringify(data));
     			if (table === "dishes"){
-       			for (var v in obj.results ){    
+       				for (var v in obj.results ){    
           			dishes.push(obj.results[v].dishName);
-       			}
+       				}
        			console.log(dishes);
-    			}else if (table === "nations"){
+    			}
+    			else if (table === "nations"){
         			for (var v in obj.results ){    
           			nations.push(obj.results[v].natName);
-       			}
+       				}
        			console.log(nations);
-    			}else{
+    			}
+    			else if (table === "adj"){
         			for (var v in obj.results ){    
           			adjs.push(obj.results[v].adjName);
-       			}
+       				}
        			console.log(adjs);
-      			}    
+      			}
+      			else {
+       				alert("Unknown table!");
+       			}    
     			},
     			error: function(xhr, textStatus, err) { 
         			alert('ne radi');
@@ -55,7 +60,8 @@ APP_DB.connector = {
 			});
 			if (table === "dishes"){  return dishes; }
  			else if (table === "nations"){return nations;}
- 			else { return adjs; }
+ 			else if (table === "adj") { return adjs; }
+ 			else { return "Unknown table!";}
 	},
 	
 
