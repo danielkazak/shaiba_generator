@@ -6,6 +6,8 @@ var APP = APP || {};
 // vars
 var POST_SUCCESS_STRING = "Successfully added: ";
 var DELETE_SUCCESS_STRING = "Successfully removed: ";
+var EMPTY_STRING_ERROR = "Please type a valid name";
+var ENTER_KEY_NUMBER = 13;
 var post_value = "";
 var return_value = [];
 var dishes = [];
@@ -66,6 +68,9 @@ APP.connector = {
 	
 
 	postData: function(table, val){
+        if (val === ""){
+            return EMPTY_STRING_ERROR;
+        }
 		// Set post_value to manipulate post data
 		if(table === "dishes"){
 			post_value = '{"dishName":"' + val + '"}';
@@ -140,22 +145,20 @@ APP.listener = {
         a = document.getElementById(elementId);
         a.onfocus = function(){
             console.log(elementId + " focused");
-            document.getElementById(elementId).addEventListener("keydown", function(e) {
-                if (!e) { var e = window.event; }
-                e.preventDefault(); // sometimes useful
-                console.log("event listener created");
-                // Enter is pressed
-                if (e.keyCode == 13) {
-                    console.log("enter pressed");
-                    APP.connector.postData(elementId.slice(1,elementId.length), a.value);
-                }
-            }, false);
         }
-
     },
 
-    dummy: function (){
-        console.log("dummy");
+    createKeyListener: function(elementId) {
+        var a = document.getElementById(elementId);
+        a.addEventListener("keydown", function(e) {
+            if (!e) { var e = window.event; }
+            var newString = elementId.slice(1, elementId.length);
+            if (e.keyCode === ENTER_KEY_NUMBER) {
+                var query = APP.connector.postData(newString, a.value);
+                console.log(query);
+                document.getElementById(elementId).value = "";
+            }
+        }, false);
     }
 };
 
