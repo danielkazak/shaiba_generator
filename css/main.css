@@ -133,6 +133,22 @@ textarea {
     color: black;
 }
 
+.centerdiv {
+    width: 400px;
+    height: 400px;
+
+
+    position: absolute;
+    top:200px;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    text-align: center;
+    color: black;
+}
+
 .sentencediv {
     width: 768px;
     height: 100px;
