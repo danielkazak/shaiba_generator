@@ -166,6 +166,7 @@ APP.listener = {
                 case "#focusguard2":
                     document.getElementById("#dishes").focus();
                     break;
+
             }
         }
     },
@@ -176,6 +177,10 @@ APP.listener = {
             if (!e) { var e = window.event; }
             var newString = elementId.slice(1, elementId.length);
             if (e.keyCode === ENTER_KEY_NUMBER) {
+                if (elementId === "#generate"){
+                    APP.operations.generateSentence();
+                }
+                else {
                 var query = APP.connector.postData(newString, a.value);
                 if (query === POST_SUCCESS_STRING) {
                     APP.connector.getData(newString);
@@ -183,6 +188,7 @@ APP.listener = {
                 console.log(query);
                 STATUS_LABEL_ELEMENT.innerHTML = query;
                 document.getElementById(elementId).value = "";
+                }
             }
         }, false);
     }
@@ -215,5 +221,15 @@ APP.operations = {
         }
 
         return VALID_NAME;
+    },
+
+    randomize: function(length){
+        return Math.floor(Math.random() * length);
+    },
+
+    generateSentence: function(){
+        var finSentence = dishesTable[APP.operations.randomize(dishesTable.length)] + " " + nationsTable[APP.operations.randomize(nationsTable.length)] +
+            " " + adjTable[APP.operations.randomize(adjTable.length)];
+        document.getElementById("#genText").innerHTML = finSentence;
     }
 };

@@ -1,17 +1,15 @@
 
 // Functions
-function Randomize(length){
-  return Math.floor(Math.random() * length);
-}
-
 
 function GenerateSentence(){
-  var finSentence = dishesTable[Randomize(dishesTable.length)] + " " + nationsTable[Randomize(nationsTable.length)] +
-  " " + adjTable[Randomize(adjTable.length)];
-  document.getElementById("#genText").innerHTML = finSentence;
+    APP.operations.generateSentence();
+    document.getElementById("#generate").focus();
+
 }
 
-function test(){
-    $("#label").text("HALLO");
-    console.log("AS");
-}
+
+$( document ).ready(function() {
+    document.getElementById("#generate").focus();
+    APP.listener.createKeyListener("#generate");
+    console.log(document.activeElement);
+});
