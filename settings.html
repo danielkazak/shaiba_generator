@@ -30,20 +30,25 @@
         </div>
         <div class="centerdiv">
         <div style="position:absolute; left:10px">
+        <table style="width: 100%;">
+            <tr>
+                <td><input type="text" placeholder="מנה" id="#dishes" class="txt" tabindex="1"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="לאום" id="#nations" class="txt" tabindex="2"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="תוספת" id="#adj" class="txt" tabindex="3"/></td>
+            </tr>
+            <tr>
+                <td><label id="#statuslabel" class="statuslabel">STATUS</label></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="GET test" onclick="get('nations')" class=""/></td>
+            </tr>
+        </table>
 
-            <input type="text" placeholder="מנה" id="#dishes" class="txt" tabindex="1"/> <input type="button" value="Push!" onclick="push('dishes')"/>
-            <br/>
-            <br/>
-            <input type="text" placeholder="לאום" id="#nations" class="txt" tabindex="2"/> <input type="button" value="Push!" onclick="push('nations')"/>
-            <br/>
-            <br/>
-            <input type="text" placeholder="תוספת" id="#adj" class="txt" tabindex="3"/> <input type="button" value="Push!" onclick="push('adj')"/>
-            <br/>
-            <br/>
-            <br>
-            
-            <input type="button" value="GET test" onclick="get('nations')"/>
-            </div>
+        </div>
             
         </div>
 

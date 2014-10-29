@@ -22,11 +22,7 @@ function get(table){
 }
 
 
-
-
-
-
-// Docoment ready
+// Document ready
 $( document ).ready(function() {
     APP.listener.createKeyListener("#nations");
     APP.listener.createKeyListener("#dishes");
