@@ -7,6 +7,6 @@ function Randomize(length){
 
 function GenerateSentence(){
   var finSentence = dishesTable[Randomize(dishesTable.length)] + " " + nationsTable[Randomize(nationsTable.length)] +
-  " " + adjsTable[Randomize(adjsTable.length)];
+  " " + adjTable[Randomize(adjTable.length)];
   document.getElementById("#genText").innerHTML = finSentence;
 }

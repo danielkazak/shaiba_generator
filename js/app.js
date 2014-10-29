@@ -3,14 +3,6 @@
 // check if global APP namespace exists, if not - create it
 var APP = APP || {};
 
-// vars
-var POST_SUCCESS_STRING = "Successfully added: ";
-var DELETE_SUCCESS_STRING = "Successfully removed: ";
-var EMPTY_STRING_ERROR = "Please type a valid name";
-var ENTER_KEY_NUMBER = 13;
-var post_value = "";
-var return_value = [];
-
 // APP.connector methods
 APP.connector = {
 
@@ -42,11 +34,11 @@ APP.connector = {
        			console.log(nationsTable);
     			}
     			else if (table === "adj"){
-                    adjsTable.length = 0;
+                    adjTable.length = 0;
         			for (var v in obj.results ){    
-          			adjsTable.push(obj.results[v].adjName);
+          			adjTable.push(obj.results[v].adjName);
        				}
-       			console.log(adjsTable);
+       			console.log(adjTable);
       			}
       			else {
        				alert("Unknown table!");
@@ -62,12 +54,17 @@ APP.connector = {
   
 			});
 	},
-	
 
 	postData: function(table, val){
-        if (val === ""){
-            return EMPTY_STRING_ERROR;
+        var validationResult = APP.operations.validate(table, val);
+
+        if (validationResult != VALID_NAME) {
+            return validationResult;
         }
+
+        var post_value = "";
+        var returnValue = "";
+
 		// Set post_value to manipulate post data
 		if(table === "dishes"){
 			post_value = '{"dishName":"' + val + '"}';
@@ -82,8 +79,6 @@ APP.connector = {
 			alert("Unknown table!");
 		}
 
-
-
 		// Execute POST method, log success or error according to POST status
 		$.ajax({
   			type: 'POST',
@@ -96,7 +91,7 @@ APP.connector = {
   			data: post_value,
  			 success: function( data, status ){
     			    console.log("POST status: " + status + "\n" + "Posted: \n" + val + " to: " + table);
-    			    return_value[0] = POST_SUCCESS_STRING + val;
+    			    returnValue = POST_SUCCESS_STRING;
     			},
     			error: function(xhr, textStatus, err) { 
         			console.log("Error:")
@@ -104,10 +99,11 @@ APP.connector = {
         			console.log(err);
         			console.log("readyState: "+xhr.readyState+"\n xhrStatus: "+xhr.status);
         			console.log("responseText: "+xhr.responseText);
+                    returnValue = PARSE_FAILED_ERROR;
     			}
   
 			});
-		return return_value[0];
+		return returnValue;
 	},
 
 	remove: function(table, val){
@@ -164,6 +160,9 @@ APP.listener = {
             var newString = elementId.slice(1, elementId.length);
             if (e.keyCode === ENTER_KEY_NUMBER) {
                 var query = APP.connector.postData(newString, a.value);
+                if (query === POST_SUCCESS_STRING) {
+                    APP.connector.getData(newString);
+                }
                 console.log(query);
                 STATUS_LABEL_ELEMENT.innerHTML = query;
                 document.getElementById(elementId).value = "";
@@ -172,6 +171,32 @@ APP.listener = {
     }
 };
 
+APP.operations = {
+    validate: function(tableName, val) {
+        // Checks if the new value is an empty string
+        if (val === "") return EMPTY_STRING_ERROR;
 
+        // Checks if the new value already exists
+        var table = [];
 
+        if (tableName === "dishes") {
+            table = dishesTable;
+        }
+        else if (tableName === "nations") {
+            table = nationsTable;
+        }
+        else if (tableName === "adj") {
+            table = adjTable;
+        }
 
+        var tableLength = table.length;
+
+        for (var i = 0; i < tableLength; i++) {
+            if (table[i] === val) {
+                return ALREADY_EXISTS_ERROR;
+            }
+        }
+
+        return VALID_NAME;
+    }
+};
