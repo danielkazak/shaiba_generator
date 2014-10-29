@@ -3,6 +3,14 @@
 // check if global APP namespace exists, if not - create it
 var APP = APP || {};
 
+// vars
+var POST_SUCCESS_STRING = "Successfully added: ";
+var DELETE_SUCCESS_STRING = "Successfully removed: ";
+var EMPTY_STRING_ERROR = "Please type a valid name";
+var ENTER_KEY_NUMBER = 13;
+var post_value = "";
+var return_value = [];
+
 // APP.connector methods
 APP.connector = {
 
@@ -54,6 +62,7 @@ APP.connector = {
   
 			});
 	},
+	
 
 	postData: function(table, val){
         var validationResult = APP.operations.validate(table, val);
@@ -135,10 +144,12 @@ APP.connector = {
 // APP.listener methods
 APP.listener = {
     createFocusListener: function(elementId) {
-        a = document.getElementById(elementId);
+        var a = document.getElementById(elementId);
         a.onfocus = function(){
             console.log(elementId + " focused");
 
+
+            // Only if the input boxes are focused
             switch (elementId){
                 case "#dishes":
                    STATUS_LABEL_ELEMENT.innerHTML = "ENTER רשום מנה ולחץ ";
@@ -148,6 +159,12 @@ APP.listener = {
                     break;
                 case "#adj":
                     STATUS_LABEL_ELEMENT.innerHTML = "ENTER רשום תוספת ולחץ ";
+                    break;
+                case "#focusguard1":
+                    document.getElementById("#adj").focus();
+                    break;
+                case "#focusguard2":
+                    document.getElementById("#dishes").focus();
                     break;
             }
         }

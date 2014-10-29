@@ -31,5 +31,9 @@ $( document ).ready(function() {
     APP.listener.createFocusListener("#nations");
     APP.listener.createFocusListener("#dishes");
     APP.listener.createFocusListener("#adj");
+    APP.listener.createFocusListener("#focusguard1");
+    APP.listener.createFocusListener("#focusguard2");
 
 });
+
+
