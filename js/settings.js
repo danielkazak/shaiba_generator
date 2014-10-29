@@ -10,6 +10,7 @@ function push(table){
     }
 
     var query = APP.connector.postData(table, val.value);
+    APP.connector.getData(table);
     document.getElementById(val.id).value = "";
     console.log(query);
     console.log(val);

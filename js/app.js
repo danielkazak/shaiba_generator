@@ -10,9 +10,6 @@ var EMPTY_STRING_ERROR = "Please type a valid name";
 var ENTER_KEY_NUMBER = 13;
 var post_value = "";
 var return_value = [];
-var dishes = [];
-var nations = [];
-var adjs = [];
 
 // APP.connector methods
 APP.connector = {
@@ -28,24 +25,28 @@ APP.connector = {
   			async: false,
   			dataType: 'json',
  			 success: function( data, status ){
+
     			var obj = $.parseJSON(JSON.stringify(data));
     			if (table === "dishes"){
+                    dishesTable.length = 0;
        				for (var v in obj.results ){    
-          			dishes.push(obj.results[v].dishName);
+          			dishesTable.push(obj.results[v].dishName);
        				}
-       			console.log(dishes);
+       			console.log(dishesTable);
     			}
     			else if (table === "nations"){
+                    nationsTable.length = 0;
         			for (var v in obj.results ){    
-          			nations.push(obj.results[v].natName);
+          			nationsTable.push(obj.results[v].natName);
        				}
-       			console.log(nations);
+       			console.log(nationsTable);
     			}
     			else if (table === "adj"){
+                    adjsTable.length = 0;
         			for (var v in obj.results ){    
-          			adjs.push(obj.results[v].adjName);
+          			adjsTable.push(obj.results[v].adjName);
        				}
-       			console.log(adjs);
+       			console.log(adjsTable);
       			}
       			else {
        				alert("Unknown table!");
@@ -60,10 +61,6 @@ APP.connector = {
     			}
   
 			});
-			if (table === "dishes"){  return dishes; }
- 			else if (table === "nations"){return nations;}
- 			else if (table === "adj") { return adjs; }
- 			else { return "Unknown table!";}
 	},
 	
 
