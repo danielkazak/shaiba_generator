@@ -4,7 +4,7 @@
 var APP = APP || {};
 
 // vars
-var POST_SUCCESS_STRING = "Successfully added: ";
+var POST_SUCCESS_STRING = "נוסף בהצלחה: ";
 var DELETE_SUCCESS_STRING = "Successfully removed: ";
 var EMPTY_STRING_ERROR = "Please type a valid name";
 var ENTER_KEY_NUMBER = 13;
@@ -139,10 +139,12 @@ APP.connector = {
 // APP.listener methods
 APP.listener = {
     createFocusListener: function(elementId) {
-        a = document.getElementById(elementId);
+        var a = document.getElementById(elementId);
         a.onfocus = function(){
             console.log(elementId + " focused");
 
+
+            // Only if the input boxes are focused
             switch (elementId){
                 case "#dishes":
                    STATUS_LABEL_ELEMENT.innerHTML = "ENTER רשום מנה ולחץ ";
@@ -152,6 +154,12 @@ APP.listener = {
                     break;
                 case "#adj":
                     STATUS_LABEL_ELEMENT.innerHTML = "ENTER רשום תוספת ולחץ ";
+                    break;
+                case "#focusguard1":
+                    document.getElementById("#adj").focus();
+                    break;
+                case "#focusguard2":
+                    document.getElementById("#dishes").focus();
                     break;
             }
         }

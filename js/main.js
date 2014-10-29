@@ -10,3 +10,8 @@ function GenerateSentence(){
   " " + adjsTable[Randomize(adjsTable.length)];
   document.getElementById("#genText").innerHTML = finSentence;
 }
+
+function test(){
+    $("#label").text("HALLO");
+    console.log("AS");
+}
