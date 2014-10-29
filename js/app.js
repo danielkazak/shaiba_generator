@@ -142,6 +142,18 @@ APP.listener = {
         a = document.getElementById(elementId);
         a.onfocus = function(){
             console.log(elementId + " focused");
+
+            switch (elementId){
+                case "#dishes":
+                   STATUS_LABEL_ELEMENT.innerHTML = "ENTER רשום מנה ולחץ ";
+                    break;
+                case "#nations":
+                    STATUS_LABEL_ELEMENT.innerHTML = "ENTER רשום לאום ולחץ ";
+                    break;
+                case "#adj":
+                    STATUS_LABEL_ELEMENT.innerHTML = "ENTER רשום תוספת ולחץ ";
+                    break;
+            }
         }
     },
 
@@ -153,6 +165,7 @@ APP.listener = {
             if (e.keyCode === ENTER_KEY_NUMBER) {
                 var query = APP.connector.postData(newString, a.value);
                 console.log(query);
+                STATUS_LABEL_ELEMENT.innerHTML = query;
                 document.getElementById(elementId).value = "";
             }
         }, false);

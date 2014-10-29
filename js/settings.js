@@ -28,4 +28,8 @@ $( document ).ready(function() {
     APP.listener.createKeyListener("#dishes");
     APP.listener.createKeyListener("#adj");
 
+    APP.listener.createFocusListener("#nations");
+    APP.listener.createFocusListener("#dishes");
+    APP.listener.createFocusListener("#adj");
+
 });

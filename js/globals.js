@@ -6,6 +6,7 @@
 var dishesTable = [];
 var nationsTable = [];
 var adjsTable = [];
+var STATUS_LABEL_ELEMENT = document.getElementById("#statuslabel");
 
 // Initializations
 $( document ).ready(function() {
